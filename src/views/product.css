@@ -1,0 +1,59 @@
+.shop__container
+{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.shop__container__items
+{
+    width: 100%;
+    padding-right:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shop__container__items__title h1
+{
+    letter-spacing: 4pt;
+}
+.shop__container__items__cart
+{
+    display: flex;
+    align-items: center;
+}
+.shop__container__items__cart p
+{
+    margin-right: 10px;
+}
+.ant-badge
+{
+    line-height: 3 !important;
+}
+
+
+/*-------------------bototn*/
+.quantity__button
+{
+    width:40px !important;
+    color: black !important;
+    background: white !important;
+    border:1px solid rgb(180, 177, 177) !important;
+    border-radius: 10px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    font-size: 1.2em !important;
+    cursor: pointer;
+}
+@media screen and (max-width:1024px)
+{
+    .shop__container
+    {
+        width: 90%;
+    }
+    .shop__container__items
+    {
+        padding: 0;
+    }
+}

@@ -1,0 +1,88 @@
+.login__header
+{
+    width: 100%;
+    padding: 20px;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.login__header img
+{
+    width: 200px;
+    height: 40px;
+}
+
+.login__container
+{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login__container__form
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    width: 30%;
+    height:auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+.login__container__form h1
+{
+    font-size: 3em;
+}
+.login__container__form form
+{
+    width: 80%;
+    text-align: center;
+}
+
+.login__container__form form input
+{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.login__container__form form h3
+{
+    margin: 10px 0;
+}
+
+.login__container__form form button
+{
+    padding: 7px 30px;
+    font-size: 1.4em;
+    border: 0;
+    background: black;
+    color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px)
+{
+    .login__container__form
+    {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    .login__container__form
+    {
+        width: 80%;
+    }
+    .login__container__form form
+    {
+        width: 100%;
+    }
+}

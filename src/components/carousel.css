@@ -1,0 +1,13 @@
+.carousel_item
+{
+    height: 75vh;
+}
+
+
+.carousel_item img
+{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}

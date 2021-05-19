@@ -1,0 +1,92 @@
+@font-face
+{
+    font-family:Bebas Neue;
+    src:url('../fonts//BebasNeue-Regular.ttf')
+}
+*
+{
+    font-family:'Bebas Neue';
+    letter-spacing: 1pt;
+}
+.header
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:20px 20px;
+    background: black;
+}
+
+.logo,.logo img
+{
+    width: 200px;
+    height: 40px;
+}
+
+.navbar ul
+{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+.navbar ul li
+{
+    margin: 0 15px;
+    font-size: 1.3em;
+    color: white;
+}
+.navbar ul li a
+{
+    color: white;
+}
+.icon_menu
+{
+    cursor: pointer;
+}
+
+.navbar__menu
+{
+    display:flex;
+    flex-direction: column;
+}
+.logout-button
+{
+    border: 1px solid yellow;
+    background: none;
+    color: yellow;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.navbar__menu__item
+{
+    margin: 20px 0;
+    text-align: center;
+}
+.navbar__menu__item a
+{
+    color: white;
+}
+
+.mobileVisible
+{
+    display: block;
+}
+.navbar
+{
+    display: none;
+}
+
+@media screen and (min-width:768px)
+{
+    .mobileVisible
+    {
+        display: none;
+    }
+    .navbar
+    {
+        display: block;
+    }
+}

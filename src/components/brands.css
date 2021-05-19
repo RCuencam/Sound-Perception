@@ -1,0 +1,34 @@
+.brands__container
+{
+    width:80%;
+    margin: 0 auto;
+}
+.brands__container h1
+{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brands__container__item
+{
+    width: 100%;
+    padding: 50px;
+    margin: 20px 0;
+    display: flex !important;
+    justify-content: center  !important;
+}
+.brands__container__item img
+{
+    width: 80%;
+    height: 100%;
+    margin:0 auto;
+
+}
+@media screen and (max-width:768px)
+{
+    .brands__container__item
+    {
+        width: 100%;
+    }
+}

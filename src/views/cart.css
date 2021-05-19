@@ -1,0 +1,30 @@
+.cart__container
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.cart__container__header
+{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 1.2em;
+}
+
+.cart__container__shipping
+{
+    width: 40%;
+    margin: 0 auto;
+}
+.cart__container__shipping h1
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:768px)
+{
+    .cart__container__shipping
+    {
+        width: 90%;
+    }
+}

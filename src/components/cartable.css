@@ -1,0 +1,77 @@
+.table__col
+{
+    text-align: right;
+}
+.table__col p
+{
+    margin-top: 30%;
+}
+.table__col:first-child
+{
+    text-align: left;
+}
+
+
+.table__subtotal
+{
+    text-align: right;
+}
+
+.table__col__product__img
+{
+    width: 150px;
+    height: 150px;
+}
+.table__col__product__img img
+{
+    width: 100%;
+    height: 100%;
+}
+.table__col__product
+{
+    width: 100%;
+    display: flex !important;
+}
+.table__col__product__name
+{
+    font-size: .8em;
+    margin: 10px 0 0 15px;
+}
+.table__col__product__name button
+{
+    background: red;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px)
+{
+    .table__col__product__img
+    {
+        width: 200px;
+        height: 100px;
+    }
+    .table__col__product__name
+    {
+        font-size: .5em;
+        margin: 10px 0 0 15px;
+    }
+    .table__col.price
+    {
+        display: none;
+    }
+    .table__col.quantity
+    {
+        display: none;
+    }
+    .table__subtotal
+    {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
