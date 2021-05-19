@@ -1,5 +1,5 @@
 import React,{useState,useMemo} from 'react'
-import getListProductsByCategory from '../helpers/getListProductsByCategory'
+import GetListProductsByCategory from '../helpers/getListProductsByCategory'
 import CategoryListProduct from './CategoryListProduct';
 import {Link} from "react-router-dom"
 import {Row,Spin} from "antd"
@@ -12,7 +12,7 @@ const antIcon = <LoadingOutlined style={{ fontSize: 70 }} spin />
 const CategoryList = ({category}) => {
 
     const [isLoading,setLoading]=useState(true)
-    const listProducts=getListProductsByCategory(category,setLoading)
+    const listProducts=GetListProductsByCategory(category,setLoading)
 
     return (
         <Row className="categorylist__container" gutter={[50,50]}>

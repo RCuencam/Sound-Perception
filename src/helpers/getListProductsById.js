@@ -3,7 +3,7 @@ import {db} from "../FirebaseConfig"
 
 const documentDatabase='jaPlEyfIwbOhLPrAaWpN'
 
-const getListProductsById = (id,setLoading) => {
+const GetListProductsById = (id,setLoading) => {
 
     const [products,setProducts]=useState([])
 
@@ -20,4 +20,4 @@ const getListProductsById = (id,setLoading) => {
     return products.find((item)=>item.id===id)
 }
 
-export default getListProductsById
+export default GetListProductsById

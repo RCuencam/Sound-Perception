@@ -2,7 +2,7 @@ import React,{useState,useContext,useMemo,useEffect} from 'react'
 import {useParams,Link} from "react-router-dom"
 import {Row,Col,Spin,Badge,Button} from "antd"
 import { LoadingOutlined } from '@ant-design/icons'
-import getListProductsById from '../helpers/getListProductsById'
+import GetListProductsById from '../helpers/getListProductsById'
 import {TiShoppingCart} from "react-icons/ti"
 import { MinusOutlined, PlusOutlined, QuestionOutlined } from '@ant-design/icons'
 import StoreContext from '../context/Store/storeContext'
@@ -16,19 +16,13 @@ const Product = () => {
 
     const {addProduct,data} = useContext(StoreContext)
 
-
-    useEffect(()=>
-    {
-        return window.scrollTo(0,0)
-    },[])
-
     const {id}=useParams()
 
     const [isLoading,setLoading]=useState(true)
     const [quantity,setQuantity]=useState(1)
 
 
-    const product=getListProductsById(Number(id),setLoading)
+    const product=GetListProductsById(Number(id),setLoading)
 
     const handleDecrement=()=>
     {

@@ -8,7 +8,10 @@ import "./listProducts.css"
 const ListProducts = () => {
     
     const {category}=useParams()
-    window.scrollTo(0,0); 
+    useEffect(()=>
+    {
+        return ()=>window.scrollTo(0,0)
+    },[]) 
     return (
         <div className="list__products">
             <h1 className="list__products__title">{category}</h1>

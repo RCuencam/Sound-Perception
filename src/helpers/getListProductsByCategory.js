@@ -3,7 +3,7 @@ import {db} from "../FirebaseConfig"
 
 const documentDatabase='jaPlEyfIwbOhLPrAaWpN'
 
-const getListProductsByCategory = (category,setLoading) => {
+const GetListProductsByCategory = (category,setLoading) => {
 
     const [products,setProducts]=useState([])
 
@@ -21,4 +21,4 @@ const getListProductsByCategory = (category,setLoading) => {
     return products.filter((item)=>item.type===category)
 }
 
-export default getListProductsByCategory
+export default GetListProductsByCategory
