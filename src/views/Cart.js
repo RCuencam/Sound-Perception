@@ -10,7 +10,7 @@ const Cart = () => {
     const {data}=useContext(StoreContext)
     useEffect(()=>
     {
-        return ()=>window.scrollTo(0,0)
+        return window.scrollTo(0,0)
     },[])
     return (
         <div className="cart__container">

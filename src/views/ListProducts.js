@@ -10,7 +10,7 @@ const ListProducts = () => {
     const {category}=useParams()
     useEffect(()=>
     {
-        return ()=>window.scrollTo(0,0)
+        return window.scrollTo(0,0)
     },[]) 
     return (
         <div className="list__products">

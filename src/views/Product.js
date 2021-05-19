@@ -21,6 +21,11 @@ const Product = () => {
     const [isLoading,setLoading]=useState(true)
     const [quantity,setQuantity]=useState(1)
 
+    useEffect(()=>
+    {
+        return window.scrollTo(0,0)
+    },[])
+
 
     const product=GetListProductsById(Number(id),setLoading)
 
